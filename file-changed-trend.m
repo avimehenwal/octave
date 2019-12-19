@@ -17,5 +17,8 @@ for ii=1:dimension
     y(ii) = str2num(count)
     %hold on
     plot (x, y, "linewidth", 4, "markersize", 10)
+    xlabel ("Time: Updated every 2 seconds");
+    ylabel ("Number of files modified in last 2 seconds");
+    title ("Master-control linux image build");
     pause (2);
 end
